@@ -4,7 +4,7 @@ from fastapi import FastAPI
 
 from app.database import Base, engine 
 from app.es_client import es, init_index 
-from app.routers import router 
+from app.routes import router 
 
 @asynccontextmanager 
 async def lifespan(app: FastAPI): 
